@@ -488,7 +488,7 @@ def save_historical_data_to_db():
 # Flask Routes
 @app.route('/')
 def dashboard():
-    return send_from_directory('.', 'IoTdashboard.html')
+    return send_from_directory('.', 'index.html')
 
 @app.route('/api/devices')
 def get_devices():
